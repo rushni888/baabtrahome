@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* button styling */
+        .button {
+  padding: 10px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  color:white;
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #dbe5eb;
+}
+/* button hover styling */
+          .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(228, 13, 13, 0.19);
+            color: #fff;
+            text-decoration: none;
+          }
+/* main grid container- divided into 3 equal columns, 1:1:1 ratio (fractional unit) */
+        .container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;   
+            /* default  */
+            grid-template-rows: auto auto 400px auto auto auto;         
+            margin-left: 5%;
+            margin-right: 5%;
+                                               
+        }
+/* top right grid containing login and register buttons  
+justif-self =end  to place buttons on the right most side*/       
+       
+        .buttonsgrid{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            justify-self: end; 
+            align-self: center;  
+                   
+        }
+/* home,contact,course navigation bar style and grid classes */
+        .menu_bar_div{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #29487d;
+            color: white;            
+
+        }          
+      
+/* inline grid to make li horizontally aligned */
+        ul{
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr;        
+            grid-gap:1em;
+            /* to remove bullets */
+            list-style: none;  
+        }
+        .centerbanner{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+          
+        .bluehead{
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        .footer{
+            
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-gap:1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div>
+            <img src="images/baabtralogo.png" width="50%" alt="">
+        </div>
+        <div class="buttonsgrid" >
+            <button class="button">login</button>
+            <button class="button">Register</button>
+            
+        </div>
+        <div class="menu_bar_div">      
+          
+            <ul class="navbar">
+                <li>Home</li>
+                <li>Courses</li>
+                <li>Contact</li>
+            </ul>
+    
+        </div>
+        <div class="centerbanner">
+            <img src="images/baabtrecenterbanner.jpg" width="100%" height="400px" alt="">
+        </div>
+        <div class="bluehead" style="background-color:#29487d;margin-top: 10px; margin-left: 50px; margin-right: 50px; color: white; text-align:center;">
+            <h2 >GETTING SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAM </h2>
+        </div>
+        <div >
+            <h3 align="center">Our office</h3>
+            <img src="images/baabtraoffice.jpg" alt="" width="250">
+          </div>
+          <div  >
+            <h3 align="center">Best Python Training In Calicut</h3>
+           <p>Python is one of the hot programming languages nowadays.
+              Many freshers are learning this software development technology and
+              are getting placed as Python Developer in Software Companies. Baabtra has the
+              highest number of candidates got trained in Python in the last year.
+              We train you to develop a web application using Python with Django framework
+              and MySql database. Python training course for freshers to make them good
+              programmers through quality training in Python & Django Framework in Calicut.</p>
+          </div>
+          <div  >
+            <h3 align="center" >Life @ baabtra</h3>
+        <iframe width="420" height="315"  src="https://www.youtube.com/embed/LIGnK77l1fA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+
+         <div class="footer"  > <!--  fixed footer  -->
+           
+              <div  style="padding: 5px; padding-left: 20px;"  >
+                baabtra<br>
+                Mentoring Partner
+              </div>
+              <div  style="padding: 5px;" >
+                <b>Email:</b> info@baabtra.com<br>
+                <b>Phone:</b> +91-8592 058 444<br>
+              </div>
+              <div  style="padding: 5px;" >
+                <b>Address:</b> <br>
+                5<sup>th</sup> Floor, CaFIT Square, <br>Hi lite Business Park, Kozhikode
+              </div> 
+            
+          </div>
+
+    </div>
+    
+</body>
+</html>
